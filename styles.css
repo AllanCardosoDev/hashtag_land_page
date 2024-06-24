@@ -1,0 +1,461 @@
+/* Estilos Gerais */
+body {
+  font-family: "Sora", sans-serif;
+  background-color: #10151b; /* Fundo principal */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px; /* Tamanho do container */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+.first-section,
+.second-section,
+.third-section,
+.footer {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.first-section {
+  background-color: #181e25; /* Fundo cinza mais escuro */
+}
+
+.second-section {
+  background-color: #000; /* Fundo preto */
+  color: #a5a5a5;
+  text-align: center;
+}
+
+.third-section {
+  background-color: #181e25; /* Fundo cinza mais escuro */
+}
+
+.footer {
+  background-color: #2b323c; /* Fundo cinza mais claro */
+  text-align: center;
+}
+
+/* Conteúdo Principal */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-container,
+.right-container {
+  flex: 1;
+}
+
+.left-container {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left; /* Alinhar o conteúdo à esquerda */
+}
+
+.title-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header img {
+  width: 50px;
+  height: auto;
+}
+
+.header h1 {
+  font-size: 39.8px;
+  margin: 20px 0;
+  text-transform: uppercase; /* Todo texto em maiúsculas */
+}
+
+.header .date {
+  color: #00a8dd; /* Azul para a data */
+}
+
+.header .date span {
+  color: #00a8dd; /* Azul para a hora */
+}
+
+.header .intro {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center; /* Centraliza o texto */
+}
+
+.icon-item img {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-item p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.icon-item p span {
+  color: #00a8dd; /* Azul para as partes específicas do texto */
+  margin-left: 5px; /* Espaçamento entre as palavras */
+}
+
+.cta-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cta-button {
+  background-color: #00a8dd;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #004e69;
+  border-radius: 20px; /* Arredondar o botão */
+  text-decoration: none;
+  font-size: 19.2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cta-button img.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.right-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-box {
+  background-color: #2b323c;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px; /* Garantir que os quadrados tenham a mesma altura */
+}
+
+.info-box-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.info-box h3 {
+  font-size: 19.2px;
+  margin-bottom: 0;
+}
+
+.info-box p.aula {
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #00b1d3; /* Azul para os números das aulas */
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-box ul li {
+  font-size: 13.3px;
+  color: #fff; /* Branco para os itens da lista */
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.info-box ul li img {
+  margin-right: 10px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.steps-container .info-box {
+  flex: 1 1 calc(33.333% - 40px);
+  margin: 10px;
+}
+
+.additional-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.additional-content .info-box {
+  flex: 1 1 calc(50% - 40px);
+  margin: 10px;
+}
+
+.person-info {
+  display: flex;
+  align-items: center;
+  background-color: #2b323c; /* Cor de fundo mais clara */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.person-info img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 60px;
+}
+
+.person-info div {
+  max-width: calc(100% - 80px); /* Ajuste a largura do texto */
+}
+
+.person-info p {
+  margin: 0;
+  line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+}
+
+.person-info p strong {
+  font-size: 1.2em; /* Aumenta o tamanho do texto do nome */
+  color: #00a8dd; /* Cor azul para o nome */
+}
+
+.person-info p:nth-of-type(2) {
+  font-size: 1em;
+  color: #a5a5a5; /* Cor cinza para o cargo */
+}
+
+.person-info p:nth-of-type(3),
+.person-info p:nth-of-type(4) {
+  font-size: 0.9em;
+}
+
+.footer p {
+  font-size: 13.3px;
+  color: #a5a5a5;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.third-section h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.step-box {
+  background-color: #2b323c;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.step-box h3 {
+  margin-bottom: 10px;
+}
+
+.step-box .highlight {
+  color: #00a8dd;
+}
+
+.third-section-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.third-section-bottom-container .left-container,
+.third-section-bottom-container .right-container {
+  flex: 1;
+}
+
+.third-section-bottom-container .right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.third-section-bottom-container .right-container .text-container {
+  margin-bottom: 20px;
+}
+
+.third-section-bottom-container .button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta-button {
+  background-color: #00a8dd;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #004e69;
+  border-radius: 20px; /* Arredondar o botão */
+  text-decoration: none;
+  font-size: 19.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centralizar o conteúdo */
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%; /* Largura total */
+}
+
+.secondary-button {
+  background-color: #2b323c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px; /* Arredondar o botão */
+  text-decoration: none;
+  font-size: 19.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #2b323c;
+  color: #fff;
+  padding: 20px 0;
+  text-align: right; /* Alinhar à direita */
+}
+
+.footer p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinhar os itens à direita */
+}
+
+.footer .hashtag-icon {
+  width: 20px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 23px;
+  }
+
+  .header p {
+    font-size: 13.3px;
+  }
+
+  .header .cta-button {
+    font-size: 16px;
+  }
+
+  .info-box {
+    flex: 1 1 100%;
+  }
+
+  .steps-container .info-box {
+    flex: 1 1 100%;
+  }
+
+  .additional-content .info-box {
+    flex: 1 1 100%;
+  }
+
+  .footer p {
+    font-size: 13.3px;
+  }
+
+  .person-info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .person-info div {
+    max-width: calc(100% - 70px);
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  .left-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .right-container {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-container {
+    flex-direction: column;
+  }
+
+  .third-section-bottom-container {
+    flex-direction: column;
+  }
+
+  .third-section-bottom-container .left-container,
+  .third-section-bottom-container .right-container {
+    width: 100%;
+  }
+
+  .third-section-bottom-container .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cta-button,
+  .secondary-button {
+    width: 100%;
+    text-align: center;
+  }
+}
